@@ -1,5 +1,6 @@
 import * as React from "react";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { Link } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -11,7 +12,11 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
-const pages = ["About", "Portfolio", "Contact"];
+const pages = [
+	{ name: "About", path: "/about" },
+	{ name: "Portfolio", path: "/portfolio" },
+	{ name: "Contact", path: "/contact" },
+];
 
 const theme = createTheme({
 	breakpoints: {
@@ -25,7 +30,7 @@ const theme = createTheme({
 	},
 });
 
-function ResponsiveAppBar() {
+const Navbar = () => {
 	const [anchorElNav, setAnchorElNav] = React.useState(null);
 
 	const handleOpenNavMenu = (event) => {
@@ -68,11 +73,13 @@ function ResponsiveAppBar() {
 						>
 							{pages.map((page) => (
 								<Button
-									key={page}
+									key={page.name}
 									onClick={handleCloseNavMenu}
 									sx={{ my: 2, color: "white", display: "block" }}
+									component={Link}
+									to={page.path}
 								>
-									{page}
+									{page.name}
 								</Button>
 							))}
 						</Box>
@@ -107,8 +114,13 @@ function ResponsiveAppBar() {
 								}}
 							>
 								{pages.map((page) => (
-									<MenuItem key={page} onClick={handleCloseNavMenu}>
-										<Typography textAlign='center'>{page}</Typography>
+									<MenuItem
+										key={page.name}
+										onClick={handleCloseNavMenu}
+										component={Link}
+										to={page.path}
+									>
+										<Typography textAlign='center'>{page.name}</Typography>
 									</MenuItem>
 								))}
 							</Menu>
@@ -118,5 +130,5 @@ function ResponsiveAppBar() {
 			</AppBar>
 		</ThemeProvider>
 	);
-}
-export default ResponsiveAppBar;
+};
+export default Navbar;
