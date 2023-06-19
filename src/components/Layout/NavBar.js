@@ -56,7 +56,7 @@ function ResponsiveAppBar() {
 								textDecoration: "none",
 							}}
 						>
-							Main
+							Neil
 						</Typography>
 
 						<Box
