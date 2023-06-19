@@ -40,8 +40,18 @@ For further discussion on this issue, you can check this [GitHub repository disc
 
 ## Installing react-router-dom
 
-[Here](https://www.npmjs.com/package/react-router-dom) for the documentation
+[Here](https://www.npmjs.com/package/react-router-dom) for the documentation.
 
 ```bash
 $ npm i react-router-dom
+```
+
+<br>
+
+## Installing react-scroll
+
+[Here](https://www.npmjs.com/package/react-scroll) for the documentation.
+
+```bash
+$ npm i react-scroll
 ```
