@@ -3,7 +3,7 @@
 To start building a new React application, we can leverage `create-react-app`, a handy toolset for creating React apps with no build configuration. Here's the command to get started:
 
 ```bash
-npx create-react-app <your-app-name>
+$ npx create-react-app <your-app-name>
 ```
 
 Remember to replace `<your-app-name>` with your desired application name.
@@ -15,13 +15,13 @@ Remember to replace `<your-app-name>` with your desired application name.
 We can add [Material UI](https://mui.com/material-ui/getting-started/installation/) dependencies to our application with the following command:
 
 ```bash
-npm i @mui/material @emotion/react @emotion/styled
+$ npm i @mui/material @emotion/react @emotion/styled
 ```
 
 In addition to the core Material UI components, we'll also install the Material UI icons using:
 
 ```bash
-npm i @mui/icons-material
+$ npm i @mui/icons-material
 ```
 
 <br>
@@ -31,7 +31,17 @@ npm i @mui/icons-material
 If you encounter any warning messages related to the babel plugin, consider adding the private-property-in-object plugin:
 
 ```bash
-npm i @babel/plugin-proposal-private-property-in-object
+$ npm i @babel/plugin-proposal-private-property-in-object
 ```
 
 For further discussion on this issue, you can check this [GitHub repository discussion](https://github.com/facebook/create-react-app/issues/11793).
+
+<br>
+
+## Installing react-router-dom
+
+[Here](https://www.npmjs.com/package/react-router-dom) for the documentation
+
+```bash
+$ npm i react-router-dom
+```
