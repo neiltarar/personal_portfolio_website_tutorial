@@ -15,6 +15,7 @@ import MenuItem from "@mui/material/MenuItem";
 const pages = [
 	{ name: "About", path: "/about" },
 	{ name: "Portfolio", path: "/portfolio" },
+	{ name: "Chatbot", path: "/chatbot" },
 	{ name: "Contact", path: "/contact" },
 ];
 
