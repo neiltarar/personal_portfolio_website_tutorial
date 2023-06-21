@@ -4,6 +4,7 @@ import HomePage from "./components/Pages/HomePage";
 import PortfolioPage from "./components/Pages/PortfolioPage";
 import ContactPage from "./components/Pages/ContactPage";
 import AboutPage from "./components/Pages/About";
+import ChatbotPage from "./components/Pages/ChatbotPage";
 
 function App() {
 	return (
@@ -14,6 +15,7 @@ function App() {
 				<Route path='/portfolio' element={<PortfolioPage />} />
 				<Route path='/contact' element={<ContactPage />} />
 				<Route path='/about' element={<AboutPage />} />
+				<Route path='/chatbot' element={<ChatbotPage />} />
 			</Routes>
 		</Router>
 	);
