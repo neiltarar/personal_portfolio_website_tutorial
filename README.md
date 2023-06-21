@@ -1,5 +1,7 @@
 # Creating a React Application
 
+First, a BIG shoutout to [Bree](https://github.com/Bvaneerden), our superstar dev. Thanks for your help, Bree!
+
 To start building a new React application, we can leverage `create-react-app`, a handy toolset for creating React apps with no build configuration. Here's the command to get started:
 
 ```bash
