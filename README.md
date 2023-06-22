@@ -57,3 +57,11 @@ $ npm i react-router-dom
 ```bash
 $ npm i react-scroll
 ```
+
+## How to install chatbot
+
+[Here](https://www.freecodecamp.org/news/how-to-build-a-chatbot-with-react/) is a handy tutorial to follow how to make the chatbot your own.
+
+```bash
+$ npm install react-chatbot-kit
+```
