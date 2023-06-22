@@ -6,6 +6,7 @@ import ContactPage from "./components/Pages/ContactPage";
 import AboutPage from "./components/Pages/About";
 import ChatbotPage from "./components/Pages/ChatbotPage";
 import Footer from "./components/Layout/Footer";
+import SplinePage from "./components/Pages/Spline";
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 				<Route path='/contact' element={<ContactPage />} />
 				<Route path='/about' element={<AboutPage />} />
 				<Route path='/chatbot' element={<ChatbotPage />} />
+				<Route path='/spline' element={<SplinePage />} />
 			</Routes>
 			<Footer />
 		</>
